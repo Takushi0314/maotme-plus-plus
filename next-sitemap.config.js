@@ -5,8 +5,7 @@
 module.exports = {
   // !STARTERCONF Change the siteUrl
   /** Without additional '/' on the end, e.g. https://google.com */
-  siteUrl:
-    'https://github.com/AlexStack/nextjs-materia-mui-typescript-hook-form-scaffold-boilerplate-starter',
+  siteUrl: 'https://github.com/Takushi0314/matome-plus-plus',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
