@@ -1,5 +1,5 @@
-import { Container } from '@mui/material';
 import GlobalStyles from '@mui/material/GlobalStyles';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { Metadata } from 'next';
 import * as React from 'react';
 
@@ -56,7 +56,7 @@ export default function RootLayout({
     <html lang='ja'>
       <GlobalStyles styles={GLOBAL_STYLES} />
       <body>
-        <Container sx={{ pl: 0, pr: 0 }}>{children}</Container>
+        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>
   );

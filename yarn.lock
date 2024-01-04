@@ -1680,6 +1680,11 @@
   dependencies:
     "@babel/runtime" "^7.23.2"
 
+"@mui/material-nextjs@^5.15.3":
+  version "5.15.3"
+  resolved "https://registry.npmjs.org/@mui/material-nextjs/-/material-nextjs-5.15.3.tgz"
+  integrity sha512-4JkJ/w3XY8nvGQzGAr9v8SDlAfvo/nDxm6/hh9KPhTnkUdyQTZc8uSOOO1o30z12XzMdQ0NRivQTZGcK8sFk8g==
+
 "@mui/material@^5.0.0", "@mui/material@^5.14.10":
   version "5.14.16"
   resolved "https://registry.npmjs.org/@mui/material/-/material-5.14.16.tgz"
@@ -5492,7 +5497,7 @@ next-sitemap@^2.5.28:
     "@corex/deepmerge" "^2.6.148"
     minimist "^1.2.6"
 
-next@*, next@^14.0.1, next@>=10.0.0:
+next@*, "next@^13.0.0 || ^14.0.0", next@^14.0.1, next@>=10.0.0:
   version "14.0.1"
   resolved "https://registry.npmjs.org/next/-/next-14.0.1.tgz"
   integrity sha512-s4YaLpE4b0gmb3ggtmpmV+wt+lPRuGtANzojMQ2+gmBpgX9w5fTbjsy6dXByBuENsdCX5pukZH/GxdFgO62+pA==
