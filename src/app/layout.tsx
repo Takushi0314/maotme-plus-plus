@@ -1,10 +1,11 @@
 import GlobalStyles from '@mui/material/GlobalStyles';
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { Metadata } from 'next';
 import * as React from 'react';
 
 import { SITE_CONFIG } from '@/constants';
 import { GLOBAL_STYLES } from '@/styles';
+
+import EmotionRegistry from './registry';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -56,7 +57,7 @@ export default function RootLayout({
     <html lang='ja'>
       <GlobalStyles styles={GLOBAL_STYLES} />
       <body>
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+        <EmotionRegistry>{children}</EmotionRegistry>
       </body>
     </html>
   );
