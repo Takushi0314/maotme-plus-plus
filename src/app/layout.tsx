@@ -53,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='ja'>
       <GlobalStyles styles={GLOBAL_STYLES} />
       <body>
         <Container sx={{ pl: 0, pr: 0 }}>{children}</Container>
