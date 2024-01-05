@@ -1,11 +1,11 @@
+'use clinet';
 import GlobalStyles from '@mui/material/GlobalStyles';
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { Metadata } from 'next';
 import * as React from 'react';
 
 import { SITE_CONFIG } from '@/constants';
 import { GLOBAL_STYLES } from '@/styles';
-
-import EmotionRegistry from './registry';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: SITE_CONFIG.title,
     images: [`${SITE_CONFIG.url}/images/og.jpg`],
     type: 'website',
-    locale: 'en_US',
+    locale: 'ja_JP',
   },
   twitter: {
     card: 'summary_large_image',
@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang='ja'>
       <GlobalStyles styles={GLOBAL_STYLES} />
       <body>
-        <EmotionRegistry>{children}</EmotionRegistry>
+        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
       </body>
     </html>
   );
