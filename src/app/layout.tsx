@@ -1,11 +1,16 @@
 'use clinet';
+import { ThemeProvider } from '@mui/material';
 import GlobalStyles from '@mui/material/GlobalStyles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 import { Metadata } from 'next';
 import * as React from 'react';
 
+import PageFooter from '@/components/shared/PageFooter';
+import PageHeader from '@/components/shared/PageHeader';
+
 import { SITE_CONFIG } from '@/constants';
 import { GLOBAL_STYLES } from '@/styles';
+import theme from '@/styles/theme';
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -56,9 +61,13 @@ export default function RootLayout({
   return (
     <html lang='ja'>
       <GlobalStyles styles={GLOBAL_STYLES} />
-      <body>
-        <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
-      </body>
+      <ThemeProvider theme={theme}>
+        <body>
+          <PageHeader />
+          <AppRouterCacheProvider>{children}</AppRouterCacheProvider>
+          <PageFooter />
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
